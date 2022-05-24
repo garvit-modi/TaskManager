@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/red"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Header"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:text="Add New"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            app:headerLayout="@layout/drawer_header"
+            app:itemBackground="@android:color/transparent"
+            app:itemIconSize="40dp"
+            app:itemTextAppearance="@style/menu_text_style"
+            app:menu="@menu/menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="12sp"
+                    android:text="Title"
+                    android:textColor="#393d46"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Select Priority"
+                    android:textColor="#b4b4b4"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Description"
+                    android:textColor="#b4b4b4"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+
+                <EditText
+                    android:id="@+id/edt_issueDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="top"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#393d46"
+                    android:lineSpacingExtra="4sp"
+                    android:background="#00000000"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2sp"
+                    android:text="Assigned To "
+                    android:textColor="#b4b4b4"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+
+
+                <EditText
+                    android:id="@+id/edtAsign"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="top"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#393d46"
+                    android:lineSpacingExtra="4sp"
+                    android:background="#00000000"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#cccccc" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#696dea"
+                    app:cardCornerRadius="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingExtra="4sp"
+                        android:text="Submit"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Cancel"
+                    android:textColor="#393d46"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

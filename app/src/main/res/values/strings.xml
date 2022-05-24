@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+    <string name="todo_list">TODO\nList</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about"><b> <font size="70">T</font></b>his is a simple TODO application. Here you can save your task, manage them and update them very easily. This app will help you in your task manangment. You can also export PDF of you task.</string>
+</resources>

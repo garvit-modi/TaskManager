@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:lineSpacingExtra="12sp"
+                        android:text="Title"
+                        android:textColor="#393d46"
+                        android:textSize="22sp"
+                        android:textStyle="italic" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardPriority"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/teal_200"
+                        app:cardCornerRadius="5dp" />
+
+                    <ImageView
+                        android:id="@+id/imgPriority"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_priority1_foreground"
+                        android:visibility="gone"
+                        app:tint="@color/red" />
+                </RelativeLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="1dp"
+                       android:lineSpacingExtra="2sp"
+                       android:text="Description :"
+                       android:textColor="@color/litherGray"
+                       android:textSize="13sp"
+                       android:layout_marginRight="5dp"
+                       android:textStyle="italic" />
+                   <com.google.android.flexbox.FlexboxLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:alignItems="flex_end"
+                       app:flexWrap="wrap"
+                       app:justifyContent="flex_end">
+
+                       <TextView
+                           android:id="@+id/Desc"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:lineSpacingExtra="5dp"
+                           android:textColor="#1c1d2a"
+                           android:textSize="13sp"
+                           tools:text="Hello"
+                           />
+
+                   </com.google.android.flexbox.FlexboxLayout>
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:lineSpacingExtra="2sp"
+                        android:text="Assigned To :"
+                        android:textColor="@color/litherGray"
+                        android:textSize="13sp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="italic" />
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:alignItems="flex_end"
+                        app:flexWrap="wrap"
+                        app:justifyContent="flex_end">
+
+                        <TextView
+                            android:id="@+id/Assigned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="5dp"
+                            android:textColor="#1c1d2a"
+                            android:textSize="13sp"
+                            tools:text="Hello"
+                            />
+
+                    </com.google.android.flexbox.FlexboxLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtShowTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textTime"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+                        tools:text="22:12 AM"
+                        android:textColor="@color/litherGray"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/txtShowDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textDate"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/litherGray"
+                        android:visibility="visible"
+                        tools:text="22-12-2017" />
+
+                </LinearLayout>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#696dea"
+                    app:cardCornerRadius="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingExtra="4sp"
+                        android:text="Update"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Cancel"
+                    android:textColor="#393d46"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
